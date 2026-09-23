@@ -1,6 +1,5 @@
 public static void main(String[] args) {
     int age = 67;
-// age = 67;
     System.out.println("возраст: " + age);
 
     if (age >= 18) {
