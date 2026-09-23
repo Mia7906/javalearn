@@ -9,7 +9,7 @@ public static void main(String[] args) {
         System.out.println("пиво нельзя");
     }
 
-    age = -67;
+    age = -488;
     System.out.println(age);
     System.out.println("age");
 
