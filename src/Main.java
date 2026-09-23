@@ -15,7 +15,7 @@ public static void main(String[] args) {
     float num7 = 4.133333f;
     System.out.println(num7);
 
-    char num67 = 'AБв';
+    char num67 = 'A';
     String user_name = "vvvvvvvv";
     System.out.println(user_name);
 
