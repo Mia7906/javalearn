@@ -1,42 +1,11 @@
-public static void main(String[] args) {
-    int age = 67;
-    System.out.println("возраст: " + age);
-
-    if (age >= 18) {
-        System.out.println("пиво можно");
-    } else {
-        System.out.println("пиво нельзя");
-    }
-
-    age = -488;
-    System.out.println(age);
-    System.out.println("age");
-
-    float num7 = 4.133333f;
-    System.out.println(num7);
-
-    char num67 = 'A';
-    String user_name = "vvvvvvvv";
-    System.out.println(user_name);
-
+void main (){
+    Cat Cat1 = new Cat();
+    System.out.println(Cat1.getName());
 }
-
-
-
-
-
-
-
-
-public class Main {
-    public static void main(String[] args) {
-        int number = 4;
-
-        if (number % 2 == 0) {
-            System.out.println("чётное");
-        } else {
-            System.out.println("нечётное");
-        }
+class Cat {
+    public String getName (){
+        return "Масик";
     }
+
 }
 
