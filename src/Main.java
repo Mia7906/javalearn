@@ -20,3 +20,23 @@ public static void main(String[] args) {
     System.out.println(user_name);
 
 }
+
+
+
+
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        int number = 4;
+
+        if (number % 2 == 0) {
+            System.out.println("чётное");
+        } else {
+            System.out.println("нечётное");
+        }
+    }
+}
+
