@@ -1,3 +1,5 @@
+import application.Student;
+
 void main(){
     System.out.println("привеет");
     System.out.println("how are you?");
