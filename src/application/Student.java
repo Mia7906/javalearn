@@ -4,7 +4,7 @@ public class Student {
 
     public String getName(){
 //        System.out.println("выполнился метод getName");
-        return "николай ";
+        return "Николай Иванов";
     }
 
     public static void summ(String[] args){
@@ -12,5 +12,6 @@ public class Student {
 
     }
 }
+
 
 
