@@ -11,5 +11,9 @@ void main(){
     Cat1.setColor("зеленый");
     System.out.println(Cat1.getColor());
 
+    Person.main(new String[]{"tom", "black", "20"});
+
+    Person User1 = new Person("tom","black", "20");
 }
+
 
