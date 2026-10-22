@@ -16,6 +16,22 @@ public class Person {
 
     }
 
+    public void sayName(){
+        System.out.println("My name is " + name );
+    }
+    public void sayEyeColor(){
+        System.out.println(eyeColor);
+    }
+    public void sayAge(){
+        System.out.println(age);
+    }
+    public void sayWeight(){
+        System.out.println(weight);
+    }
+
+
+
+
     public static void main(String[] args) {
 
         Person person = new Person("Tom", "he has black eyes", "he is 20", "70kg");
