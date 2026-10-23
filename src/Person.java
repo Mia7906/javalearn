@@ -35,6 +35,10 @@ public class Person {
     public static void main(String[] args) {
 
         Person person = new Person("Tom", "he has black eyes", "he is 20", "70kg");
+        person.sayName();
+
+
+
         System.out.println(person.name);
         System.out.println(person.eyeColor);
         System.out.println(person.age);
