@@ -1,3 +1,5 @@
+import javax.naming.Name;
+
 public class Person {
 
     String name;
@@ -29,6 +31,13 @@ public class Person {
         System.out.println(weight);
     }
 
+    public String getName() {
+        return this.name;
+    }
+    public void setName(String newName){
+        this.name = newName;
+    }
+
 
 
 
@@ -37,9 +46,10 @@ public class Person {
         Person person = new Person("Tom", "he has black eyes", "he is 20", "70kg");
         person.sayName();
 
+        System.out.println(person.getName() + ".");
+        person.setName("Make");
+        System.out.println(person.getName());
 
-
-        System.out.println(person.name);
         System.out.println(person.eyeColor);
         System.out.println(person.age);
         System.out.println(person.weight);
