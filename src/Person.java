@@ -57,6 +57,9 @@ public class Person {
         } else if (newAge >= 200) {
             throw new IllegalArgumentException("вы не настолько девний");
         }
+        if (newAge ==66){
+            throw new IllegalArgumentException("это шутка? ");
+        }
         this.age = newAge;
 
     }
@@ -84,6 +87,8 @@ public class Person {
             throw new IllegalArgumentException("вес не может быть больше 999");
         }
         this.weight = weight;
+
+
     }
 
     public static void main(String[] args) {

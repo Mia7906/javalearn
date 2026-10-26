@@ -60,6 +60,10 @@ public class PersonTest {
         person.setWeight(1);
         assertEquals(1, person.getWeight());
     }
-
+@Test
+    public void setAge3(){
+    Person person = new Person("Tom", "black", 22, 70);
+assertThrows(IllegalArgumentException.class, ()-> person.setAge(66));
+}
 
 }
