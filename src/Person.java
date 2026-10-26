@@ -1,5 +1,4 @@
 import javax.naming.Name;
-
 public class Person {
 
     String name;
@@ -22,11 +21,11 @@ public class Person {
     }
 
     public void sayEyeColor() {
-        System.out.println(eyeColor);
+        System.out.println("i have" + eyeColor);
     }
 
     public void sayAge() {
-        System.out.println(age);
+        System.out.println("i'm " + age);
     }
 
     public void sayWeight() {
@@ -42,14 +41,30 @@ public class Person {
     }
 
 
+    public String getEyeColor() {
+        return this.eyeColor;
+    }
+    public void setEyeColor(String newEyeColor) {
+        this.eyeColor = newEyeColor;
+    }
+
+
+
+
     public static void main(String[] args) {
 
-        Person person = new Person("Tom", "he has black eyes", "he is 20", "70kg");
+        Person person = new Person("Tom", " black eyes", "20", "70kg");
         person.sayName();
+        person.sayEyeColor();
+        person.sayAge();
+        person.sayWeight();
+
+
 
         System.out.println(person.getName() + ".");
         person.setName("Make");
         System.out.println(person.getName());
+
 
         System.out.println(person.eyeColor);
         System.out.println(person.age);
@@ -59,7 +74,6 @@ public class Person {
     }
 
 }
-
 
 
 
