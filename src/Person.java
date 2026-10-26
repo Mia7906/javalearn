@@ -54,7 +54,7 @@ public class Person {
     public void setAge(int newAge) {
         if (this.age > newAge) {
             throw new IllegalArgumentException("возраст должен быть больше текущего ");
-        } else if (newAge > 1000) {
+        } else if (newAge >= 200) {
             throw new IllegalArgumentException("вы не настолько девний");
         }
         this.age = newAge;
