@@ -5,7 +5,7 @@ public class Person {
     String eyeColor;
     String age;
     String weight;
-
+    //шаблон класса
 
     public Person(String name, String eyeColor, String age, String weight) {
 
@@ -13,15 +13,15 @@ public class Person {
         this.eyeColor = eyeColor;
         this.age = age;
         this.weight = weight;
-
     }
+//конструктор
 
     public void sayName() {
         System.out.println("My name is " + name);
     }
 
     public void sayEyeColor() {
-        System.out.println("i have" + eyeColor);
+        System.out.println("i have " + eyeColor);
     }
 
     public void sayAge() {
@@ -39,7 +39,7 @@ public class Person {
     public void setName(String newName) {
         this.name = newName;
     }
-
+//методы
 
     public String getEyeColor() {
         return this.eyeColor;
@@ -65,12 +65,9 @@ public class Person {
         person.setName("Make");
         System.out.println(person.getName());
 
-
-        System.out.println(person.eyeColor);
-        System.out.println(person.age);
-        System.out.println(person.weight);
-
-
+        System.out.println(person.getEyeColor() + "изменился на ");
+        person.setEyeColor("pink");
+        System.out.println(person.getEyeColor());
     }
 
 }
