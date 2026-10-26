@@ -1,4 +1,5 @@
 import javax.naming.Name;
+
 public class Person {
 
     String name;
@@ -46,17 +47,22 @@ public class Person {
     public String getEyeColor() {
         return this.eyeColor;
     }
+
     public void setEyeColor(String newEyeColor) {
         this.eyeColor = newEyeColor;
     }
-    public void setAge(int newAge){
-        if(this.age>newAge){
-            throw new IllegalArgumentException("возраст не может быть меньше текущего ");
+
+    public void setAge(int newAge) {
+        if (this.age > newAge) {
+            throw new IllegalArgumentException("возраст должен быть больше текущего ");
+        } else if (newAge > 1000) {
+            throw new IllegalArgumentException("вы не настолько девний");
         }
         this.age = newAge;
 
     }
-    public int getAge(){
+
+    public int getAge() {
         return this.age;
 
     }
@@ -65,12 +71,12 @@ public class Person {
     // 1.  создать метод получения веса
 //2. создать метод изменения веса
 //3. добавить условие
-    public int getWeight(){
+    public int getWeight() {
         return this.weight;
     }
 
     public void setWeight(int weight) {
-        if (this.weight<0){
+        if (this.weight < 0) {
             throw new IllegalArgumentException("вес не может быть меньше 0");
         }
         this.weight = weight;
@@ -86,7 +92,6 @@ public class Person {
         person.sayWeight();
 
 
-
         System.out.println(person.getName() + ".");
         person.setName("Make");
         System.out.println(person.getName());
@@ -96,15 +101,15 @@ public class Person {
         System.out.println(person.getEyeColor());
 
         System.out.println(person.getAge());
-        person.setAge(22);
+        person.setAge(2000000000);
         System.out.println(person.getAge());
 
         System.out.println(person.getWeight());
-        person.setWeight(0);
+        person.setWeight(70);
         System.out.println(person.getWeight());
 
 
-}
+    }
 
 }
 
