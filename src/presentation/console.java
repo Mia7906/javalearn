@@ -13,7 +13,7 @@ void main(){
 
     Person.main(new String[]{"tom", "black", "20"});
 
-    Person User1 = new Person("tom","black", "20", "70");
+    Person User1 = new Person("tom","black", 20, 70);
 }
 
 
