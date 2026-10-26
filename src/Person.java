@@ -82,7 +82,7 @@ public class Person {
             throw new IllegalArgumentException("вес не может быть меньше 0");
 
         }
-        else if (weight > 999)
+        else if (weight >= 201)
     {
             throw new IllegalArgumentException("вес не может быть больше 999");
         }

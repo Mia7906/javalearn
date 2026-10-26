@@ -44,14 +44,14 @@ public class PersonTest {
     @Test
     public void SetWeight2() {
         Person person = new Person("Tom", "black", 22, 70);
-        assertThrows(IllegalArgumentException.class, () -> person.setWeight(1000));
+        assertThrows(IllegalArgumentException.class, () -> person.setWeight(201));
     }
 
     @Test
     public void checkWeight() {
         Person person = new Person("Tom", "black", 22, 70);
-        person.setWeight(999);
-        assertEquals(999, person.getWeight());
+        person.setWeight(200);
+        assertEquals(200, person.getWeight());
     }
 
     @Test
@@ -63,7 +63,7 @@ public class PersonTest {
 @Test
     public void setAge3(){
     Person person = new Person("Tom", "black", 22, 70);
-assertThrows(IllegalArgumentException.class, ()-> person.setAge(66));
+    assertThrows(IllegalArgumentException.class, ()-> person.setAge(66));
 }
 
 }
