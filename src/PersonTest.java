@@ -33,5 +33,16 @@ public class PersonTest {
         assertThrows(IllegalArgumentException.class,()->person.setAge(200));
 
     }
+@Test
+    public void SetWeight(){
+        Person person = new Person("Tom", "black", 22, 70);
+        assertThrows(IllegalArgumentException.class,()->person.setWeight(-1));
+}
+@Test
+    public void SetWeight2(){
+        Person person = new Person("Tom", "black", 22, 70);
+        assertThrows(IllegalArgumentException.class,()->person.setWeight(1000));
+}
+
 
 }
