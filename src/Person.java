@@ -70,10 +70,10 @@ public class Person {
     }
 
     public void setWeight(int weight) {
-        this.weight = weight;
         if (this.weight<0){
             throw new IllegalArgumentException("вес не может быть меньше 0");
         }
+        this.weight = weight;
     }
 
     public static void main(String[] args) {
