@@ -20,7 +20,8 @@ public class PersonTest {
         person.setAge(33);
         assertEquals(33, person.getAge());
     }
- @Test
+
+    @Test
     public void checkSetAge2() {
         Person person = new Person("Tom", "black", 22, 70);
         person.setAge(199);
@@ -30,19 +31,35 @@ public class PersonTest {
     @Test
     public void SetAgeThrow() {
         Person person = new Person("Tom", "black", 22, 70);
-        assertThrows(IllegalArgumentException.class,()->person.setAge(200));
+        assertThrows(IllegalArgumentException.class, () -> person.setAge(200));
 
     }
-@Test
-    public void SetWeight(){
+
+    @Test
+    public void SetWeight() {
         Person person = new Person("Tom", "black", 22, 70);
-        assertThrows(IllegalArgumentException.class,()->person.setWeight(-1));
-}
-@Test
-    public void SetWeight2(){
+        assertThrows(IllegalArgumentException.class, () -> person.setWeight(0));
+    }
+
+    @Test
+    public void SetWeight2() {
         Person person = new Person("Tom", "black", 22, 70);
-        assertThrows(IllegalArgumentException.class,()->person.setWeight(1000));
-}
+        assertThrows(IllegalArgumentException.class, () -> person.setWeight(1000));
+    }
+
+    @Test
+    public void checkWeight() {
+        Person person = new Person("Tom", "black", 22, 70);
+        person.setWeight(999);
+        assertEquals(999, person.getWeight());
+    }
+
+    @Test
+    public void checkWeight2() {
+        Person person = new Person("Tom", "black", 22, 70);
+        person.setWeight(1);
+        assertEquals(1, person.getWeight());
+    }
 
 
 }

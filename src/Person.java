@@ -75,8 +75,13 @@ public class Person {
     }
 
     public void setWeight(int weight) {
-        if (weight < 0 || weight>=1000) {
+        if (weight <= 0){
             throw new IllegalArgumentException("вес не может быть меньше 0");
+
+        }
+        else if (weight > 999)
+    {
+            throw new IllegalArgumentException("вес не может быть больше 999");
         }
         this.weight = weight;
     }
