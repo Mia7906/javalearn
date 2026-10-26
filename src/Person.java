@@ -9,7 +9,6 @@ public class Person {
     //шаблон класса
 
     public Person(String name, String eyeColor, int age, int weight) {
-
         this.name = name;
         this.eyeColor = eyeColor;
         this.age = age;
