@@ -1,17 +1,17 @@
-import org.jspecify.annotations.Nullable;
-
 public class Car {
 
     private final String brand;
+    private final int maxSpeed;
     public int speed;
     String color;
-    private static final int MAX_SPEED = 1000;
+
     private static final int MIN_SPEED = 0;
 
-    public Car(String color, String brand) {
-        this.speed = 0;
+    public Car(String color, String brand, int maxSpeed) {
+        this.speed = MIN_SPEED;
         this.color = color;
         this.brand = brand;
+        this.maxSpeed = maxSpeed;
     }
 
     public int getSpeed() {
@@ -24,7 +24,7 @@ public class Car {
             throw new IllegalArgumentException("скорость не может быть меньше 0");
 
         }
-        if (newSpeed >= MAX_SPEED) {
+        if (newSpeed > this.maxSpeed) {
             throw new IllegalArgumentException("Достигнута MAX скорость ");
         }
 
