@@ -61,6 +61,12 @@ public class CarTest {
         Car car = new Car("black");
         assertEquals("black", car.getColor());
     }
+    @Test
+    public void updateColor(){
+        Car car = new Car("black");
+        car.updateColor("pink");
+        assertEquals("pink", car.getColor());
+    }
 
 
 

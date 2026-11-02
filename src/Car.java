@@ -36,4 +36,8 @@ public class Car {
     public String getColor() {
         return this.color;
     }
+
+    public void updateColor(String color) {
+        this.color = color;
+    }
 }
