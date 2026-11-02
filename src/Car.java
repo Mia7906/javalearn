@@ -10,7 +10,7 @@ public class Car {
         return this.speed;
     }
     public void updateSpeed(int newSpeed){
-        if (newSpeed <=0){
+        if (newSpeed < 0){
             throw new IllegalArgumentException("скорость не может быть меньше 0");
 
         }

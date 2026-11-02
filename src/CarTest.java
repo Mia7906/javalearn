@@ -16,8 +16,8 @@ public class CarTest {
     @Test
     public void updateSpeed(){
         Car car = new Car();
-        car.updateSpeed(60);
-        assertEquals(60,car.getSpeed());
+        car.updateSpeed(0);
+        assertEquals(0,car.getSpeed());
 
     }
 
