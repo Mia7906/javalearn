@@ -9,4 +9,21 @@ public class Car {
     public int getSpeed() {
         return this.speed;
     }
+    public void updateSpeed(int newSpeed){
+      this.speed = newSpeed;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
