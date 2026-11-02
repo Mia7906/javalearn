@@ -28,7 +28,20 @@ public class CarTest {
 
     }
 
+    @Test
+    public void updateSpeedMaxError(){
+        Car car = new Car(); //создали новый объект со скоросью 0
+        car.updateSpeed(999);// установить скорость объекту
+        assertEquals(999, car.getSpeed());
 
+    }
+
+    @Test
+    public void updateSpeedMaxError3(){
+        Car car = new Car();
+        assertThrows(IllegalArgumentException.class, () -> car.updateSpeed(1000));
+
+    }
 
 
 

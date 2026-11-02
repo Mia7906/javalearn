@@ -14,7 +14,9 @@ public class Car {
             throw new IllegalArgumentException("скорость не может быть меньше 0");
 
         }
-
+        else if (newSpeed >=1000){
+            throw new IllegalArgumentException("Достигнута MAX скорость ");
+        }
 
         this.speed = newSpeed;
 
