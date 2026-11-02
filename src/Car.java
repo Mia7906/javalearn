@@ -23,15 +23,7 @@ public class Car {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
+    public void updateSpeed10() {
+        this.speed = this.speed +10;
+    }
 }
