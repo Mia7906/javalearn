@@ -5,13 +5,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CarTest {
-
+//машина должна ехать 999 включительно. от 0 до 999
    @Test
-   public void SetMax_speed(){
-       Car car = new Car("Toyota", "Black", 300);
-       assertThrows(IllegalArgumentException.class, () -> car.setMax_speed(0));
-   }
+   public void getSpeed(){
+       Car car = new Car();
+       assertEquals(0,car.getSpeed());
 
+   }
 
 
 
