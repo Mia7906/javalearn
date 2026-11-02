@@ -21,6 +21,13 @@ public class CarTest {
 
     }
 
+    @Test
+    public void updateSpeedMinError(){
+        Car car = new Car();
+        assertThrows(IllegalArgumentException.class, () -> car.updateSpeed(-1));
+
+    }
+
 
 
 
