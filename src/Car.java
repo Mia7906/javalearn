@@ -1,9 +1,13 @@
 public class Car {
 
     public int speed;
+    String color;
 
-    public Car() {
+
+
+    public Car(String color) {
         this.speed = 0;
+        this.color = color;
     }
 
     public int getSpeed() {
@@ -26,5 +30,10 @@ public class Car {
     public void updateSpeed10() {
        int newSpeed = this.speed +10;
         this.updateSpeed(newSpeed);
+    }
+
+
+    public String getColor() {
+        return this.color;
     }
 }
