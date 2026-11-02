@@ -1,13 +1,17 @@
+import org.jspecify.annotations.Nullable;
+
 public class Car {
 
+    private final String brand;
     public int speed;
     String color;
 
 
 
-    public Car(String color) {
+    public Car(String color, String brand) {
         this.speed = 0;
         this.color = color;
+        this.brand = brand;
     }
 
     public int getSpeed() {
@@ -39,5 +43,9 @@ public class Car {
 
     public void updateColor(String color) {
         this.color = color;
+    }
+
+    public  String getFirm() {
+        return this.brand;
     }
 }
