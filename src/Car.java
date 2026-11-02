@@ -24,6 +24,7 @@ public class Car {
 
 
     public void updateSpeed10() {
-        this.speed = this.speed +10;
+       int newSpeed = this.speed +10;
+        this.updateSpeed(newSpeed);
     }
 }

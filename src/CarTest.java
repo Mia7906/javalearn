@@ -47,7 +47,14 @@ public class CarTest {
     public void updateSmallSpeed() {
         Car car = new Car();
         car.updateSpeed10();
-        assertEquals(10,car.getSpeed());
+        assertEquals(10, car.getSpeed());
+    }
+
+    @Test
+    public void updateLimitSpeed() {
+        Car car = new Car();
+        car.updateSpeed(997);
+        assertThrows(IllegalArgumentException.class, () -> car.updateSpeed10());
     }
 
 
