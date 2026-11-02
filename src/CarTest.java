@@ -82,11 +82,10 @@ public class CarTest {
         assertEquals("Ferrari", car.getFirm());
     }
 
-
-
-
-
-
+    @Test
+    public void limitMaxSpeed() {
+        assertThrows(IllegalArgumentException.class, () -> new Car("black", "Ferrari", 0));
+    }
 
 
 

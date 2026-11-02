@@ -12,11 +12,16 @@ public class Car {
         this.color = color;
         this.brand = brand;
         this.maxSpeed = maxSpeed;
+
+        if (maxSpeed <= MIN_SPEED ) {
+            throw new IllegalArgumentException("Недопустимо");
+        }
     }
 
     public int getSpeed() {
         return this.speed;
     }
+
 
     public void updateSpeed(int newSpeed) {
 
