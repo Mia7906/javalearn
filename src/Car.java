@@ -5,8 +5,8 @@ public class Car {
     private final String brand;
     public int speed;
     String color;
-
-
+    private static final int MAX_SPEED = 1000;
+    private static final int MIN_SPEED = 0;
 
     public Car(String color, String brand) {
         this.speed = 0;
@@ -17,12 +17,14 @@ public class Car {
     public int getSpeed() {
         return this.speed;
     }
-    public void updateSpeed(int newSpeed){
-        if (newSpeed < 0){
+
+    public void updateSpeed(int newSpeed) {
+
+        if (newSpeed < MIN_SPEED) {
             throw new IllegalArgumentException("скорость не может быть меньше 0");
 
         }
-        else if (newSpeed >=1000){
+        if (newSpeed >= MAX_SPEED) {
             throw new IllegalArgumentException("Достигнута MAX скорость ");
         }
 
@@ -30,9 +32,8 @@ public class Car {
 
     }
 
-
     public void updateSpeed10() {
-       int newSpeed = this.speed +10;
+        int newSpeed = this.speed + 10;
         this.updateSpeed(newSpeed);
     }
 
@@ -45,7 +46,9 @@ public class Car {
         this.color = color;
     }
 
-    public  String getFirm() {
+    public String getFirm() {
         return this.brand;
     }
+
+
 }
